@@ -19,5 +19,6 @@
         <nav class="navbar navbar-fixed-top">
             @include('partials.navbar')
         </nav>
+
     </body>
 </html>
