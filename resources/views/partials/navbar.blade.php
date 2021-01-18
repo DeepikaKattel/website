@@ -1,13 +1,13 @@
-<div id="cssmenu">
-    <figure class="swing">
-            <img src="{{asset('images/logoFull.png')}}">
-    </figure>
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Career</a></li>
-        <li><a href="">Vision</a></li>
+<div class="nav-toggle">
+    <div class="nav-toggle-bar"></div>
+</div>
 
+<nav id="nav" class="nav">
+    <ul>
+        <li><a>About</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>Services</a></li>
+        <li><a>Contact</a></li>
         @if (Route::has('login'))
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                 @auth
@@ -21,8 +21,10 @@
                 @endauth
             </div>
         @endif
-
     </ul>
-</div>
+
+</nav>
+
+
 
 

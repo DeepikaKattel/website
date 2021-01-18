@@ -12,8 +12,8 @@
 .swing:after {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border: 1px solid #999;
     top: -10px;
     left: 35%;
