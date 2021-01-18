@@ -10,18 +10,16 @@
         <li><a>Contact</a></li>
         @if (Route::has('login'))
             @auth
-                <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+                <li><a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a></li>
             @else
-                <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
+                <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a></li>
 
                 @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                    <li><a href="{{ route('register') }}" class="text-sm text-gray-700 underline">Register</a></li>
                 @endif
             @endauth
-
         @endif
     </ul>
-
 </nav>
 
 
