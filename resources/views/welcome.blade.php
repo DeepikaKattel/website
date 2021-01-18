@@ -18,11 +18,13 @@
     </head>
     <body>
     @include('partials.navbar')
+
     <main id="main" class="background-flowers">
         <figure class="swing" style="float:right">
             <img src="{{asset('images/logoFull.png')}}">
         </figure>
     </main>
+
     </body>
     <script src="{{asset('js/nav.js')}}"></script>
 

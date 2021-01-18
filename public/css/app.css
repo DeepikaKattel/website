@@ -51,7 +51,7 @@ a:hover {
   padding: 2rem;
 }
 #main.background-flowers {
-  background-image: linear-gradient(to bottom, rgba(86, 52, 209, 0.5), rgba(40, 221, 224, 0.5)), url("../image/background/background-flowers.jpg");
+  background-image: linear-gradient(to bottom, rgba(86, 52, 209, 0.5), rgba(40, 221, 224, 0.5)), url("../images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
