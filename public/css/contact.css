@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap');
+
+body {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.inTouchTxt{
+    font-size: 20px;
+    color: #85abd4;
+}
+
+.contactContainer{
+    height: 450px;
+}
+
+.formContainer{
+  background-color: #85abd4;
+  height: 200;
+}
+
+.moreContainer{
+  padding-top: 150px;
+  height: 450px;
+  text-align: center;
+  background: linear-gradient(to bottom, #e3effa, rgba(44, 46, 46, 0.5)),url('../images/laptop.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.moreContainer h3{
+  color: #004085;
+  font-size: 30px;
+}
+
+.moreContainer h3:hover{
+  font-size: 32px;
+}
+
+.moreContainer p{
+  color: #f0f0fa;
+  font-size: 15px;
+}
+
+.moreContainer p:hover{
+  font-size: 17px;
+}
