@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,32 +7,62 @@
 }
 
 html {
-  color: #ffffff;
-  font: normal 10px/1.42857 "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: black;
+  font: normal 10px/1.42857 "Archivo Narrow', sans-serif";
   scroll-behavior: smooth;
 }
+hr{
+    color: #38c172;
+    margin:auto;
+}
 body{
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-family: 'Archivo Narrow', sans-serif;
     overflow-x: hidden;
+    background:url("../images/backgroundBody.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin:0;
+    padding:0;
+    position: relative;
+}
+.footer p{
+    font-size: 13px;
+    color: white;
+}
+.footer h3{
+    color: white;
+}
+ul li{
+    font-size: 12px;
+    text-align: center;
+}
+.footer{
+    background: #3b4c50;
+    bottom:0;
+}
+.footer .row{
+    background: white;
+}
+.footer .row p{
+    color: black !important;
 }
 h1, h2{
     text-align: center;
-    color:#1a0745 !important;
-    font-family: cursive !important;
+    color:black;
+    font-family:'Archivo Narrow', sans-serif !important;
 }
 
+/*.about{*/
 
-.about{
-    background: grey;
-    min-height:500px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    border-radius:20px ;
-}
+/*    min-height:500px;*/
+/*    padding-top: 100px;*/
+/*    padding-bottom: 100px;*/
+/*    border-radius:20px ;*/
+/*}*/
 
 section{
-    min-height:700px;
-    padding-bottom:100px;
+    min-height:600px;
+    margin-bottom:100px;
 }
 .row{
     right: 0;
@@ -39,6 +70,19 @@ section{
 .services img{
     max-height: 60px;
     max-width: 60px;
+}
+.products img{
+    max-height: 60px;
+    max-width: 60px;
+}
+.products h2{
+    margin-top: 50px;
+}
+.products p{
+    text-align: center;
+}
+.card:hover{
+    background: linear-gradient(to bottom, rgba(86, 52, 209, 0.5), rgba(40, 221, 224, 0.5));
 }
 
 
@@ -50,28 +94,94 @@ section{
     }
     h1{
         font-size: 40px !important;
+        margin-bottom: 50px !important;
+    }
+    #main {
+        flex-grow: 1;
+        min-height: 100vh;
+        background: #ffffff;
+        color: #2b3742;
+        padding: 2rem;
+    }
+    .products{
+        padding-top: 100px;
+    }
+    #main.background-flowers {
+        background-image:  linear-gradient(to bottom, rgba(86, 52, 209, 0.5), rgba(40, 221, 224, 0.5)),url("../images/background.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        right: 0;
+        top: 0;
+        opacity: 1;
+        max-height:600px;
+        position: relative;
+
     }
 
     .aboutContent {
-        position: absolute;
+        position: relative;
+        margin:50px;
+        border-radius: 50px;
+        height: 500px;
         right:0;
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.7);
     }
 
     .about .aboutHeading{
         transform: rotate(-90deg);
         font-size: 30px;
-        margin-top:50px;
+        margin-top: 50px;
+        width:300px;
+        height: 200px;
     }
     .services .row{
-        max-height:700px;
+        max-height:600px;
         left:0 !important;
         right:0 !important;
         bottom:0 !important;
         position: relative;
     }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 100vh;
+    }
+    .flex-item {
+        min-width: 50%;
+        min-height: 50%;
+    }
+
     .services p {
         font-size: 14px;
+    }
+    .aboutContentImg {
+        background: white;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px;
+        right: 0;
+        top: 0;
+        max-height: 600px;
+        position: relative;
+    }
+    #main.servicesImg {
+        background-image: linear-gradient(to bottom, rgba(209, 178, 183, 0.51), rgba(112, 149, 224, 0.5)),url("../images/services.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height:600px;
+        position: relative;
+        left: 0;
+        top: 0;
+        opacity: 1;
+    }
+
+    .card{
+        border-radius: 50px;
+        box-shadow:0 2px 4px rgba(0,0,0,.25);
+        min-height:400px;
     }
 
 }
@@ -90,6 +200,32 @@ section{
     .home{
         margin-bottom: 100px;
     }
+    #main {
+        flex-grow: 1;
+        min-height: 50vh;
+        background: #ffffff;
+        color: #2b3742;
+        padding: 2rem;
+    }
+    #main.background-flowers {
+        background-image:  linear-gradient(to bottom, rgba(86, 52, 209, 0.5), rgba(40, 221, 224, 0.5)),url("../images/background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        max-height:200px;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 100vh;
+    }
+    .flex-item {
+        max-width: 50%;
+        max-height: 50%;
+    }
 
     .aboutContent {
         position: relative;
@@ -97,25 +233,43 @@ section{
         max-width: 300px;
         background: rgba(255, 255, 255, 0.5);
     }
-    .about{
-        margin-top: 200px;
-    }
-    .aboutHeading{
-        border-radius: 50%;
 
-
-    }
     .about .aboutHeading h1{
         transform: rotate(360deg);
         font-size: 30px;
-        margin-top:50px;
     }
 
     .services .row{
+        margin-top: 50px;
         max-height:600px;
+        left:0 !important;
+        right:0 !important;
+        bottom:0 !important;
+        position: relative;
     }
+
     .services p {
         font-size: 7px;
+    }
+
+    #main.servicesImg {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height:600px;
+        position: relative;
+        left: 0;
+        top: 0;
+        opacity: 1;
+    }
+    .products{
+        margin-top: 50px;
+    }
+    .card{
+        border-radius: 20px;
+        box-shadow:0 2px 4px rgba(0,0,0,.25);
+        max-height:200px;
     }
 
 }
@@ -140,18 +294,9 @@ a:hover {
   position: relative;
 }
 
-#main {
-  flex-grow: 1;
-  min-height: 100vh;
-  background: #ffffff;
-  color: #2b3742;
-  padding: 2rem;
-}
+
 .home{
-    margin-top:200px;
-}
-.services{
-    margin-top: 100px;
+    margin-top:100px;
 }
 
 
@@ -180,32 +325,37 @@ a:hover {
 }
 
 
-#main.background-flowers {
-    background-image:  linear-gradient(to bottom, rgba(86, 52, 209, 0.5), rgba(40, 221, 224, 0.5)),url("../images/background.jpg");
-    width: 100%;
-    max-height:700px;
-    position: absolute;
-    right: 0;
-    top: 0;
+
+
+#main.servicesImg:hover{
+    background-image:  linear-gradient(to bottom, rgba(209, 161, 0, 0.5), rgba(224, 41, 0, 0.5)),url("../images/services.jpg");
+
 }
-#main.servicesImg {
-    background-image:  linear-gradient(to bottom, rgba(86, 52, 209, 0.5), rgba(40, 221, 224, 0.5)),url("../images/about.jpg");
-    width: 100%;
-    max-height:700px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
+/*.servicesImg h1, h2{*/
+/*    color:white !important;*/
+/*}*/
 #main.servicesBackground{
     background-image:  linear-gradient(to bottom, rgba(133, 209, 197, 0.5), rgba(103, 197, 224, 0.5));
     width: 100%;
-    max-height:700px;
+    max-height:600px;
     position: absolute;
     left: 0;
     top: 0;
 }
 
+#service1 img:hover{
+    opacity: 0.5;
+}
+#service2 img:hover{
+    opacity: 0.5;
+}
+#service3 img:hover{
+    opacity: 0.5;
 
+}
+#service4 img:hover{
+    opacity: 0.5;
+}
 
 
 
