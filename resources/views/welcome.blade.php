@@ -25,7 +25,7 @@
     </head>
     <body>
     <section class="container-fluid">
-        <div class="row aboutImg justify-content-center">
+        <div class="row justify-content-center">
             <div class="col-lg-12 col-12 p-0 m-0">
                 <div class="col-lg-6 col-12">
                     @include('partials.navbar')
@@ -47,7 +47,7 @@
 
 
     <section class="container about">
-        <div class="row aboutImg justify-content-center">
+        <div class="row justify-content-center">
             <div class="col-lg-12 col-12 wow fadeIn">
                 <div class="col-lg-2 col-12 wow rotateIn">
                     <h1 class="aboutHeading">About Us</h1>
@@ -57,7 +57,8 @@
                         <h1>Why US?</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                            <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupi</p>
+
                     </div>
                 </div>
 
@@ -77,14 +78,14 @@
                 <div class="col-lg-6 col-12">
                     <div class="container">
                         <div class="row flex-container">
-                            <div class="col wow fadeInUp flex-item" data-wow-duration="3s" data-wow-delay="1s" id="service1">
+                            <div class="col wow fadeInUp flex-item" data-wow-duration="3s" data-wow-delay="0.5s" id="service1">
                                 <img class="m-3" src="{{asset('images/design.PNG')}}"/>
                                 <h3>Web Design</h3>
                                 <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
                                     Bonorum et Malorum for use in a type specimen book.
                                     </p>
                             </div>
-                            <div class="col wow fadeInUp flex-item" data-wow-duration="3s" data-wow-delay="1.5s" id="service2">
+                            <div class="col wow fadeInUp flex-item" data-wow-duration="3s" data-wow-delay="1s" id="service2">
                                 <img class="m-3" src="{{asset('images/development.PNG')}}"/>
                                 <h3> Web Development</h3>
                                 <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
@@ -92,14 +93,14 @@
                                     </p>
                             </div>
 {{--                            <div class="w-100"></div>--}}
-                            <div class="col wow fadeInUp flex-item" data-wow-duration="3s" data-wow-delay="2s" id="service3">
+                            <div class="col wow fadeInUp flex-item" data-wow-duration="3s" data-wow-delay="1.5s" id="service3">
                                 <img class="m-3" src="{{asset('images/browser.PNG')}}"/>
                                 <h3>Hosting Services</h3>
                                 <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
                                     inibus Bonorum et Malorum for use in a type specimen book.
                                    </p>
                             </div>
-                            <div class="col wow fadeInUp flex-item" data-wow-duration="3s" data-wow-delay="2.5s" id="service4">
+                            <div class="col wow fadeInUp flex-item" data-wow-duration="3s" data-wow-delay="2s" id="service4">
                                 <img class="m-3" src="{{asset('images/mobile-app.PNG')}}"/>
                                 <h3>Mobile Application Development</h3>
                                 <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
@@ -140,6 +141,13 @@
             </div>
         </div>
     </section>
+    <div class="career">
+        <div class="row justify-content-center">
+                <div class="wow bounceInRight" data-wow-duration="2s" data-wow-delay="1s">
+                    <h1>Choose Us</h1>
+                </div>
+        </div>
+    </div>
     @include('partials.footer')
     <script src="{{asset('js/nav.js')}}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
