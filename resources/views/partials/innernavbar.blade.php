@@ -16,7 +16,7 @@
   <nav class="navbar navbar-expand-lg navbar-mainbg">
     <a class="navbar-brand navbar-logo animated flip" href="#"><img src="{{asset('images/logo2.png')}}" alt="Logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-bars text-white"></i>
+    <i class="fas fa-bars text-black"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
@@ -31,9 +31,26 @@
                 <a class="nav-link" href="javascript:void(0);"><i class="fas fa-hands-helping"></i>SERVICES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('contact') }}"><i class="far fa-id-card"></i>CONTACT US</a>
+                <a class="nav-link" href="{{route('career')}}"><i class="fas fa-user"></i>CAREER</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('contact') }}"><i class="fas fa-address-book"></i>CONTACT US</a>
             </li>
         </ul>
     </div>
   </nav>
 </html>
+
+{{-- 
+  <script>
+    $(document).ready(function() {
+        $( ".ml-auto .nav-item" ).bind( "click", function(event) {
+            event.preventDefault();
+            var clickedItem = $( this );
+            $( ".ml-auto .nav-item" ).each( function() {
+                $( this ).removeClass( "active" );
+            });
+            clickedItem.addClass( "active" );
+        });
+    });
+    </script> --}}

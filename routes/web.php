@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/vision', [App\Http\Controllers\PagesController::class, 'vision'])->name('vision');
 Route::get('/contact_us', [App\Http\Controllers\PagesController::class, 'contact'])->name('contact');
+Route::get('/career', [App\Http\Controllers\PagesController::class, 'career'])->name('career');

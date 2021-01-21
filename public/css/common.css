@@ -17,12 +17,6 @@
     background-repeat: no-repeat;
   }
   
-  .visionImg{
-    background: url('../images/vission.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
   .breadCrumbBtn {
     background-color: white;
     border: none;
@@ -41,10 +35,12 @@
   
   .breadCrumbBtn:hover {
     background-color: rgba(20, 20, 20);
+    cursor: pointer;
   }
   
   .breadCrumbBtn:hover a{
     color:white !important;
+    cursor: pointer;
   }
   
   .radius{
@@ -78,12 +74,6 @@
     color: #004085;
     text-shadow: 1px 1px #dde5eb;
     animation: titlemove 10s reverse 1;
-  }
-  
-  @keyframes titlemove {
-    50% {
-      text-shadow: 3px 3px 3px #85abd4;
-    }
   }
   
   .about-contentWrap img {

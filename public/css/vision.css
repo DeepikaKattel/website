@@ -4,76 +4,58 @@ body {
   font-family: 'Archivo Narrow', sans-serif;
 }
 
-.page {
-  background: #fff;
-  height: 250px;
-
-  /* Optional Gradient */
-  background: linear-gradient(to bottom, white, rgba(106, 126, 158), rgba(68, 88, 120));
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+.vision-box{
+  background: white; 
+  border-width: 0px;
+  border-color: white;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px #cad1d9;
+  cursor: pointer;
+  transition: transform .4s;
+  margin: 10px;
 }
 
-.page h4 {
-  padding: 60px 0 0 20px;
+.vision-box:hover {
+  transform: scale(1.1); /* (110% zoom)*/
+}
+
+.vision-box-image{
+  text-align: center;
+}
+
+
+.vision-box-image img{
+  width: 15%;
+  margin-top: -10%;
+}
+
+
+.vision-box:hover .vision-box-image img{
+  transition: 1.2s;
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.vision-inner-box-image{
+  margin: 5px;
+  height: 180px;
+}
+
+.vision-inner-box-image h4{
+  font-size: 22px;
   font-family: 'Archivo Narrow', sans-serif;
   color: #004085;
   text-shadow: 1px 1px rgba(106, 126, 158);
   text-align: center;
 }
- 
-.page p {
-  padding: 10px 20px;
-  font-family: 'Archivo Narrow', sans-serif;
-  color: white;
-  opacity: 0.8;
+
+.vision-inner-box-image p{
+  padding: 0px 0px;
+  margin-top: 20px;
   text-align: center;
 }
 
-.page i{
-  top: 0%;
-  left: 100%;
-}
 
-.foldtl {
-  position: relative;
-  -webkit-box-shadow: 3px 3px 3px rgba(217, 221, 222);
-  -moz-box-shadow: 3px 3px 3px rgba(217, 221, 222);
-  box-shadow: 3px 3px 3px rgba(217, 221, 222);
-}
-
-.foldtl:before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 0px;
-  height: 0px;
-  border-bottom: 70px solid #eee;
-  border-left: 70px solid transparent;
-  -webkit-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
-  -moz-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
-  box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
-}
-
-.foldtl:after {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 0px;
-  height: 0px;
-  border-top: 69px solid white; 
-  border-right: 69px solid transparent;
-}
-
-
-.image-wrap{
-  transition: transform .2s;
-}
-
-.image-wrap:hover{
-  transform: scale(0.5); 
-}
 
 
 

@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="{{asset('css/common.css')}}">
         <link rel="stylesheet" href="{{asset('css/vision.css')}}">
+        
     </head>
     <body>
         @include('partials.innernavbar')
@@ -47,36 +48,55 @@
         <div class='space1'></div>
         <div class='space1'></div>
 
-
         <section class="inner-content-wrap">
         <div class="container">
             <div class="row">
-              <div class="col-md-4" >    
-                <div class="page foldtl">
-                    <h4>Our Vision</h4>
-                    <p>To Become A Global Partner In Software and Web Application Outsourcing For Medium To Large Scale Companies</p>
-                  </div>
-              </div>
-              <div class="col-md-4">    
-                <div class="page foldtl">
-                    <h4>Our Vision</h4>
-                    <p>To Become A Global Partner In Software and Web Application Outsourcing For Medium To Large Scale Companies</p>
-                  </div>
-              </div>
-              <div class="col-md-4">    
-                <div class="page foldtl">
-                    <h4>Our Vision</h4>
-                    <p>To Become A Global Partner In Software and Web Application Outsourcing For Medium To Large Scale Companies</p>
-                  </div>
-              </div>       
-              </div>
+                <div class="col-md-4">
+                    <div class="vision-box">
+                        <div class="vision-box-image">
+                            <img src="{{asset('images/mission.png')}}" alt="mission"/>
+                        </div>
+                    <div class="container mt-3">
+                        <div class="vision-inner-box-image">
+                            <h4>Our Mission</h4>
+                            <p>At Let IT Grow, we will always strive to deliver an innovative, technically sharp and affordable products and services that deliver maximum return.</p>        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="vision-box">
+                        <div class="vision-box-image">
+                            <img src="{{asset('images/objective.png')}}" alt="objective"/>
+                        </div>
+                        <div class="container mt-3">
+                            <div class="vision-inner-box-image">
+                                <h4>Our Objective</h4>
+                                <p>To deliver high quality products and services within required timeframe with best practices for customer satisfaction in very reasonable price without comprimising in quality.</p>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="vision-box">
+                        <div class="vision-box-image">
+                            <img src="{{asset('images/motivation.png')}}" alt="motivation"/>
+                        </div>
+                        <div class="container mt-3">
+                            <div class="vision-inner-box-image">
+                                <h4>Our Motivation</h4>
+                                <p>To provide innovative solutions to solve the biggest problems in software and web technology. We are dedicated to working with our trusted partners to leverage our strong skills and knowledge.</p>            
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
         </section>
 
         <div class='space1'></div>
         <div class='space1'></div>
-        
     </body>
   
 </html>
